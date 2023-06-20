@@ -8,9 +8,9 @@ import rootReducer from "./reducers";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 
-const store = configureStore({ 
-  reducer: rootReducer, 
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(thunk)
+const store = configureStore({
+  reducer: rootReducer,
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(thunk),
 });
 
 ReactDOM.render(
@@ -19,7 +19,7 @@ ReactDOM.render(
       <App />
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
