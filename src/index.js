@@ -5,7 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 //REDUX SETUP
 import { legacy_createStore as createStore } from "redux";
 import rootReducer from "./reducers";
-import { Provider } from "react";
+import { Provider } from "react-redux";
 
 const store = createStore(rootReducer);
 
